@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FocusFlow – Plan smarter. Study better.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div id="toasts" role="status" aria-live="polite"></div>
+<dialog id="dlg"></dialog>
+
+<!-- LANDING -->
+<section class="view" id="v-landing"><div class="wrap">
+<div class="nav"><div class="logo"><i id="lg1"></i>FocusFlow</div><button class="btn" data-go="login">Log in</button></div>
+<div class="hero"><div>
+<h1>Plan smarter. Study better.</h1>
+<p class="lead">One calm dashboard for assignments, exams, deadlines and study sessions, so you always know what to work on next.</p>
+<div class="acts"><button class="btn pri lg" data-go="login">Get Started</button><button class="btn lg" data-go="dashboard">View Demo</button></div></div>
+<div class="card prev" aria-hidden="true"><div class="top" style="margin:0 0 10px"><b>Due today</b><span class="chip">2 of 3 on track</span></div>
+<div class="row"><span class="cb" aria-hidden="true">✓</span><b>Complete CNN assignment</b><span class="chip High" style="margin-left:auto">High</span></div>
+<div class="row"><span class="cb"></span><b>Review Machine Learning notes</b><span class="chip" style="margin-left:auto">Medium</span></div>
+<div class="row"><span class="cb"></span><b>Prepare AI presentation</b><span class="chip High" style="margin-left:auto">High</span></div>
+<div class="bar" style="margin-top:14px"><b style="width:64%"></b></div><p class="sm mut" style="margin-top:8px">64% of today's plan finished</p></div></div>
+<div class="feat" id="feat"></div>
+<footer><div class="logo" style="font-size:16px"><i id="lg2" style="width:24px;height:24px;border-radius:8px"></i>FocusFlow</div><span>A UI/UX mini project for students.</span></footer>
+</div></section>
+
+<!-- AUTH -->
+<section class="view" id="v-login"><div class="authw"><div class="card auth">
+<div class="logo"><i id="lg3"></i>FocusFlow</div>
+<div class="tabs" role="tablist"><button class="on" data-m="in" role="tab">Log in</button><button data-m="up" role="tab">Sign up</button></div>
+<form id="af" novalidate>
+<div id="nmf" hidden><label for="an">Full name</label><input id="an" type="text" autocomplete="name"></div>
+<label for="ae">Email</label><input id="ae" type="email" autocomplete="email" placeholder="you@college.edu"><div class="errm" id="ee"></div>
+<label for="ap">Password</label><input id="ap" type="password" autocomplete="current-password" placeholder="At least 8 characters"><div class="errm" id="pe"></div>
+<p class="sm" style="margin:10px 0 18px"><a href="#" id="fp" style="color:var(--acc)">Forgot password?</a></p>
+<button class="btn pri lg" style="width:100%;justify-content:center" id="ab">Continue</button></form>
+<p class="sm mut" style="text-align:center;margin:16px 0">or</p>
+<button class="btn lg" style="width:100%;justify-content:center" id="gg"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 0 1-2.1 3.1v2.600h3.400c2-1.800 3.100-4.500 3.100-7.500z"/><path fill="#34A853" d="M12 22c2.800 0 5.200-.9 6.900-2.500l-3.400-2.600c-.9.600-2.100 1-3.500 1-2.700 0-5-1.800-5.800-4.300H2.700v2.700A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.200 13.600a6 6 0 0 1 0-3.800V7.100H2.700a10 10 0 0 0 0 9.200z"/><path fill="#EA4335" d="M12 5.900c1.500 0 2.900.5 4 1.600l3-3A10 10 0 0 0 2.700 7.100l3.500 2.700C7 7.700 9.300 5.900 12 5.900z"/></svg>Continue with Google</button>
+</div></div></section>
+
+<!-- APP -->
+<div class="shell" id="shell">
+<aside class="side"><div class="logo"><i id="lg4"></i>FocusFlow</div><nav id="nav" style="display:grid;gap:4px"></nav>
+<div style="margin-top:auto" class="card sm"><b>Daily target</b><div class="bar" style="margin:10px 0 6px"><b style="width:68%"></b></div><span class="mut">2h 50m of 4h</span></div></aside>
+<main>
+<section class="view" id="v-dashboard"></section><section class="view" id="v-tasks"></section><section class="view" id="v-planner"></section>
+<section class="view" id="v-focus"></section><section class="view" id="v-analytics"></section><section class="view" id="v-settings"></section>
+</main><nav class="bnav" id="bnav"></nav></div>
+
+<script src="js/script.js"></script></body></html>
